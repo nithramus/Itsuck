@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="122dp"
+        android:layout_height="39dp"
+        android:text="NAME : "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="-1dp"
+        app:layout_constraintRight_toLeftOf="@+id/button5" />
+
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="338dp"
+        android:layout_height="85dp"
+        android:text="DESCription de l'entprise ou du site, le truc dans le genre quoi je peux même mettre un retrour a la ligne, cz'est solide hein"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/itsuck"
+        android:layout_width="161dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="34dp"
+        android:text="C'est de la merde"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/Comment" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:text="ça va"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="34dp"
+        app:layout_constraintTop_toBottomOf="@+id/Comment" />
+
+    <Button
+        android:focusable="false"
+        android:id="@+id/button5"
+        android:layout_width="119dp"
+        android:layout_height="46dp"
+        android:text="Num com"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="-14dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/Description"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="71dp"
+        android:layout_height="47dp"
+        app:srcCompat="@android:drawable/screen_background_dark"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/Comment"
+        android:layout_width="341dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="0dp"
+        android:text="Dernier commentaire"
+        app:layout_constraintTop_toBottomOf="@+id/Description"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="386dp"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteX="-4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="270dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+</android.support.constraint.ConstraintLayout>

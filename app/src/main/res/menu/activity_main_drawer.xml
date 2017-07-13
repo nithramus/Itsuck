@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/random"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Au hasard"
+            />
+        <item
+            android:id="@+id/worst_marque"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Les marques qui craignent" />
+        <item
+            android:id="@+id/worst_sites"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Les sites qui craignent" />
+        <item
+            android:id="@+id/best_comment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Les meilleurs commentaires" />
+        <item
+            android:id="@+id/new_marques"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Nouveaux" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/connection"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Connection" />
+            <item
+                android:id="@+id/inscription"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Inscription" />
+        </menu>
+    </item>
+
+</menu>
